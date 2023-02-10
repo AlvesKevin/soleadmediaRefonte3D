@@ -242,10 +242,17 @@ footer{
 
 #containerTexteNosSolutionsFooter{
     margin-top: 140px;
+    margin-left: 20px;
 }
 
 #containerTexteAutreSolution{
+    margin-top: 140px;
+    margin-left: 20px;
+}
 
+#containerReseauImage img{
+    width: 12%;
+    margin-top: 70px;
 }
 
 .lil-gui.autoPlace {
