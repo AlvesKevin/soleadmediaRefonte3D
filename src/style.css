@@ -240,6 +240,10 @@ footer{
     margin-left: 30px;
 }
 
+#containerAutreSolutionReseau{
+    width: 20%;
+}
+
 #containerTexteNosSolutionsFooter{
     margin-top: 140px;
     margin-left: 20px;
@@ -251,7 +255,7 @@ footer{
 }
 
 #containerReseauImage img{
-    width: 12%;
+    width: 15%;
     margin-top: 70px;
 }
 
