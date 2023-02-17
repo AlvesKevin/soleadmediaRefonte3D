@@ -60,6 +60,7 @@ gltfLoader.setDRACOLoader(dracoLoader)
 
 let mixer = null
 
+
 gltfLoader.load(
     '/models/logoSofan/soleadsmedia.gltf',
     (gltf) =>
