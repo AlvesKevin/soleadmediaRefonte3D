@@ -134,19 +134,52 @@ li a {
 }
 
 .sous-menu {
-    width: 20%;
+    width: 18%;
     text-align: left;
     overflow: hidden;
     max-height: 0;
-    border-radius: 5px;
-    background-color: white;
+    background-color: rgb(124, 17, 230);
     position: absolute;
     z-index: 2;
+    display: flex;
 }
 
 .menu-deroulant:hover > .sous-menu {
     animation: apparitionSousMenu 1s forwards;
 }
+
+.sous-menu a{
+    color: white !important;
+}
+
+.sous-menu li{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    height: 60px;
+    color: #ffffff !important;
+
+
+    --initialBgColor: #272838;
+    --slideBgColor: #FFF;
+
+    background-image: linear-gradient(90deg,
+    var(--initialBgColor) 0%,
+    var(--initialBgColor) 50%,
+    var(--slideBgColor) 50%,
+    var(--slideBgColor) 100%);
+    background-size: 400%;
+    transition: background-position .3s cubic-bezier(.47, .1, 1, .63),
+    color .2s linear;
+    transition-delay: 0.0s, 0.15s;
+}
+
+.sous-menu li:hover{
+    color: #000000 !important;
+    cursor: pointer;
+    background-position: -50% 100%;
+}
+
 
 .sous-menu img{
     width: 40px;
@@ -157,14 +190,12 @@ li a {
 @keyframes apparitionSousMenu {
     0% {
         box-shadow: 0px 3px 3px 1px rgba(0,0,0,0);
-        border-top: 3px solid #790ce4;
     }
     30% {
         box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
     }
     100% {
         max-height: 50em;
-        border-top: 3px solid #9939fa;
         box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
     }
 }
@@ -560,17 +591,22 @@ footer{
     justify-content: space-between;
 }
 
-#containerTitreContactezNousGenerationLead{
+.containerTitreContactezNous{
     width: 40%;
     margin: 0 auto;
     text-align: center;
 }
 
-#containerTitreContactezNousGenerationLead p{
-    margin-top: 20px;
+.containerTitreContactezNous h2{
+    font-size: 30px;
 }
 
-#containerTitreContactezNousGenerationLead .btn{
+.containerTitreContactezNous p{
+    margin-top: 20px;
+    font-size: 23px;
+}
+
+.containerTitreContactezNous .btn{
     margin: 50px auto;
 }
 
@@ -580,6 +616,14 @@ footer{
     width: 10%;
     margin: 80px auto;
     text-align: center;
+    font-size: 30px;
+}
+
+#containerBackgroundCRM{
+    width: 100%;
+    background-image: url("img/backgroundContainerCRM.png");
+    background-repeat: no-repeat;
+    margin-bottom: 100px;
 }
 
 #containerPourquoiNotreCRM{
@@ -590,11 +634,43 @@ footer{
 }
 
 #containerTextePourquoiNotreCRM{
-    width: 100%;
-    margin-right: 100px;
+    width: 500px;
+    margin-top: 180px;
+}
+
+#containerTextePourquoiNotreCRM h3{
+    font-size: 30px;
+}
+
+#containerTextePourquoiNotreCRM p{
+    font-size: 23px;
+    margin-top: 15px;
+}
+
+.vignettePourquoiNotreCRM:nth-child(1){
+    background-color: #DCA0FF;
+}
+
+.vignettePourquoiNotreCRM:nth-child(2){
+    background-color: #A0CCFF;
+}
+
+.vignettePourquoiNotreCRM:nth-child(3){
+    background-color: #A0FFE8;
 }
 
 .vignettePourquoiNotreCRM{
-    background-color: #871CC6;
-    width: 80%;
+    width: 900px;
+    padding: 30px;
+    border-radius: 30px;
+    margin-top: 20px;
 }
+
+.vignettePourquoiNotreCRM h3{
+    font-size: 30px;
+}
+
+.vignettePourquoiNotreCRM p{
+    font-size: 23px;
+}
+
