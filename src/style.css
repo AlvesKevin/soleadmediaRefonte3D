@@ -11,6 +11,11 @@ html, body {
     font-family: 'Poppins', sans-serif;
 }
 
+a{
+    text-decoration: none;
+    color: #141214;
+}
+
 .webgl {
     width: 50%;
     top: 0;
@@ -55,7 +60,15 @@ html, body {
     padding-top: 14px;
     font-weight: 600;
     color: white;
+    font-size: 18px;
+    cursor: pointer;
+    filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.25));
 }
+
+.btn:hover{
+    background: linear-gradient(112.11deg, rgba(124, 24, 224, 0.8) 3.84%, rgba(164, 80, 245, 0.84) 95.88%);
+}
+
 
 #containerIllustrationTitre{
     display: flex;
@@ -254,11 +267,192 @@ footer{
     margin-left: 20px;
 }
 
-#containerReseauImage img{
+.imageReseau{
     width: 15%;
     margin-top: 70px;
 }
 
+.imageReseau:hover{
+    transform: scale(1.2);
+    transition: transform 1s ease;
+}
+
 .lil-gui.autoPlace {
     display: none;
+}
+
+/********** Qui sommes-nous**********/
+
+.containerTitreIllustration{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerTitreIllustration h2{
+    font-size: 40px;
+    margin-top: 80px;
+    width: 65%;
+}
+
+.containerTitreIllustration p{
+    font-size: 23px;
+    margin-top: 20px;
+    width: 85%;
+}
+
+
+.imageIllustrationHeader{
+    animation: floating 5s ease-in-out infinite;
+}
+
+@keyframes floating {
+    from {
+        transform: translateY(0%);
+    }
+    65% {
+        transform: translateY(-8%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
+#containerTitreMission{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#containerTitreMission h2{
+    font-size: 30px;
+}
+
+#containerTitreMission p{
+    font-size: 23px;
+    margin-top: 20px;
+}
+
+#containerMission{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.containerMissionTexte{
+    width: 34%;
+    margin-top: 80px;
+}
+
+.containerMissionTexte h3{
+    font-size: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.containerMissionTexte .imageBulleMission{
+    position: absolute;
+    z-index: 2;
+}
+
+.containerMissionTexte p{
+    font-size: 23px;
+    margin-top: 20px;
+}
+
+.containerMissionTexte:nth-child(2){
+    margin-top: 180px;
+}
+
+.containerMissionTexte:nth-child(3){
+    margin-left: 250px;
+}
+
+.containerMissionTexte strong{
+    font-size: 90px;
+    font-weight: normal;
+}
+
+#containerTitreLesVisagesDeSoleadmedia{
+    width: 30%;
+    margin: 80px auto;
+    text-align: center;
+}
+
+#containerTitreLesVisagesDeSoleadmedia h2{
+    font-size: 30px;
+}
+
+#containerTitreLesVisagesDeSoleadmedia p{
+    font-size: 23px;
+    margin-top: 20px;
+}
+
+.containerLesVisagesDeSoleadmedia{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.containerLesVisagesDeSoleadmedia h3{
+    font-size: 30px;
+    margin-top: 100px;
+    margin-left: 150px;
+}
+
+.containerLesVisagesDeSoleadmedia p{
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 150px;
+}
+
+.containerLesVisagesDeSoleadmediaDroite{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.containerLesVisagesDeSoleadmediaDroite{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.containerLesVisagesDeSoleadmediaDroite h3{
+    font-size: 30px;
+    margin-top: 100px;
+    margin-left: 150px;
+}
+
+.containerLesVisagesDeSoleadmediaDroite p{
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 150px;
+}
+
+#containerVignetteGenerationDeLead{
+    width: 80%;
+    margin: 80px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#containerTitreContactezNousGenerationLead{
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#containerTitreContactezNousGenerationLead p{
+    margin-top: 20px;
+}
+
+
+#containerTitreContactezNousGenerationLead .btn{
+    margin: 50px auto;
 }

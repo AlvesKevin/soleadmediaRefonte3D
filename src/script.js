@@ -14,12 +14,11 @@ const gui = new dat.GUI()
 // Canvas
 const canvas = document.querySelector('canvas.webgl')
 
-//changer la couleur de la scene
-canvas.style.background = '#ff4141'
 
 // Scene
 const scene = new THREE.Scene()
 
+scene.background = new THREE.Color(0x87ceeb);
 
 //Ajout html
 const htmlElement = document.createElement('div')
