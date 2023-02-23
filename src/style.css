@@ -21,6 +21,7 @@ a{
     top: 0;
     left: 0;
     outline: none;
+    display: none;
 }
 
 #navbar{
@@ -267,14 +268,34 @@ li a {
 
 /*----------------------Fin hover solution onglet-----------------------------------*/
 
+#page1{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(119.13deg, #49147D 0.33%, #9326FF 71.91%);
+}
+
+#containerTitrePage1{
+    width: 50%;
+    margin-left: 100px;
+    color: white;
+    margin-top: 200px;
+}
+
+#containerTitrePage1 h2{
+    font-size: 40px;
+}
+
+#containerTitrePage1 p{
+    font-size: 30px;
+}
+
 #containerIllustrationTitre{
     display: flex;
     width: 80%;
     justify-content: space-between;
     margin: 0 auto;
-}
-
-#containerTitre{
 }
 
 #containerTitre h2{
