@@ -9,6 +9,41 @@
     #containerTexteQuiSommesNous{
         width: 600px;
     }
+
+    /*-------------- CRM ---------------*/
+
+    #titrePourquoiCRM{
+        width: 100%;
+    }
+
+    #containerVignettePourquoiNotreCRM{
+        width: 100%;
+    }
+
+    .vignettePourquoiNotreCRM{
+        width: 70%;
+        margin-right: 0;
+        float: right;
+    }
+
+    /***************** Analyse comportemental ****************/
+
+    #containerSolutionAnalyseComportemental{
+        width: 80%;
+        flex-wrap: wrap;
+    }
+
+    #containerSolutionAnalyseComportemental img{
+        width: 300px;
+    }
+
+    #containerTextePourquoiNotreCRM{
+        margin-top: 50px;
+    }
+
+    #containerBackgroundCRM{
+        margin-top: 100px;
+    }
 }
 
 @media (max-width: 1280px){
@@ -22,6 +57,10 @@
     }
     #containerOnglet p:nth-child(4){
         margin-right: 20px;
+    }
+
+    .containerTitreIllustration{
+        margin-bottom: 50px;
     }
 
     #containerTitrePage1{
@@ -72,6 +111,18 @@
         width: 425px;
         height: 425px;
     }
+
+    /*------------- Génération de lead ------------*/
+
+    #containerVignetteGenerationDeLead{
+        flex-wrap: wrap;
+    }
+
+    .vignetteGenerationDeLead{
+        margin-top: 20px;
+    }
+
+
 }
 
 @media (max-width: 1012px){
@@ -197,7 +248,7 @@
     footer{
         flex-wrap: wrap;
         border-bottom: none;
-        margin-top: 0;
+        margin-top: 50px;
     }
 
     #containerAutreSolutionReseau{
@@ -208,10 +259,195 @@
         width: 100%;
         margin-top: 50px;
     }
+
+    /*-------------Qui sommes nous --------------*/
+
+    .containerTexte h2{
+        width: 100%;
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+    .containerTexte p{
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .imageIllustrationHeader{
+        width: 50%;
+        height: 300px;
+    }
+
+    #containerTitreMission{
+        width: 90%;
+        margin-top: 50px;
+    }
+
+    #containerTitreMission h2{
+        font-size: 25px;
+    }
+
+    #containerTitreMission p{
+        font-size: 18px;
+    }
+
+    #containerNosServicesGenerationDeLead{
+        width: 90%;
+        margin-top: 50px;
+    }
+
+    #containerNosServicesGenerationDeLead h2{
+        font-size: 25px;
+    }
+
+    #containerNosServicesGenerationDeLead p{
+        font-size: 18px;
+    }
+
+    .containerMissionTexte h3{
+        font-size: 20px;
+    }
+
+    .containerMissionTexte strong{
+        font-size: 80px;
+    }
+
+    .containerMissionTexte p{
+        font-size: 15px;
+    }
+
+    #containerMission{
+        width: 90%;
+
+    }
+
+    #containerTitreLesVisagesDeSoleadmedia{
+        width: 80%;
+    }
+
+    #containerTitreLesVisagesDeSoleadmedia h2{
+        font-size: 25px;
+    }
+
+    #containerTitreLesVisagesDeSoleadmedia p{
+        font-size: 18px;
+    }
+
+    .containerLesVisagesDeSoleadmedia{
+        width: 90%;
+    }
+
+    .containerLesVisagesDeSoleadmedia h3{
+        font-size: 25px;
+        margin-left: 50px;
+    }
+
+    .containerLesVisagesDeSoleadmedia p{
+        font-size: 20px;
+        margin-left: 50px;
+    }
+
+    .containerLesVisagesDeSoleadmedia img{
+        width: 50%;
+        height: 50%;
+    }
+
+    .containerLesVisagesDeSoleadmediaDroite{
+        width: 90%;
+    }
+
+    .containerLesVisagesDeSoleadmediaDroite h3{
+        font-size: 25px;
+        margin-left: 50px;
+    }
+
+    .containerLesVisagesDeSoleadmediaDroite p{
+        font-size: 20px;
+        margin-left: 50px;
+    }
+
+    .containerLesVisagesDeSoleadmediaDroite img{
+        width: 50%;
+        height: 50%;
+    }
+
+    /*---------------- Génération de lead --------------*/
+
+    .containerTitreContactezNous{
+        width: 95%;
+    }
+
+
+    /*-------------------Fichier B2B------------------*/
+
+    #imageBaseB2B{
+        display: none;
+    }
+
+    .vignettePartoutDansLeMonde{
+        margin: 0 auto;
+        width: 250px;
+        font-size: 22px;
+        padding-top:40px ;
+    }
+
+    #containerTexteFichier h2{
+        font-size: 20px;
+    }
+
+    #containerTexteFichier p{
+        font-size: 15px;
+    }
+
+    #containerContenuFichier{
+        margin: 50px auto;
+    }
+
+    #titrePartoutDansLeMonde{
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+
+    /*----------------- Analyse -----------------*/
+
+    #containerSolutionAnalyseComportemental{
+        width: 80%;
+        flex-wrap: wrap;
+    }
+
+    #containerSolutionAnalyseComportemental img{
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    /*---------------------- Contact ----------------------*/
+
+    #maps{
+        display: none;
+    }
+
+    #containerTexte{
+        width: 80%;
+        margin: 50px auto;
+        text-align: center;
+    }
+
+    #containerFormulaire form{
+        margin: 0 auto;
+    }
+
+    #illustrationCheminCRM{
+        display: none;
+    }
+
 }
 
 
 @media (max-width: 645px){
+
+    .imageIllustrationHeader{
+        display: none;
+    }
 
     #containerVignette1{
         width: 80%;
@@ -258,6 +494,26 @@
     #containerIllustrationReseaux {
         height: 220px;
     }
+
+    #containerTitreAnalyseComportementale{
+        width: 80%;
+    }
+
+    #containerTitreAnalyseComportementale h2{
+        font-size: 20px;
+    }
+
+    #containerTitreAnalyseComportementale p{
+        font-size: 15px;
+    }
+
+    #containerTextePourquoiNotreCRM h3{
+        font-size: 20px;
+    }
+
+    #containerTextePourquoiNotreCRM p{
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 494px){
@@ -301,8 +557,54 @@
         margin-bottom: 0;
     }
 
-    #containerLogoContact{
+    .imageIllustrationHeader{
+        display: none;
+    }
 
+    #containerMission{
+        flex-direction: column;
+    }
+
+    .containerMissionTexte{
+        width: 100%;
+    }
+
+    .containerMissionTexte{
+        width: 100%;
+    }
+
+    .containerMissionTexte:nth-child(2){
+        margin-top: 70px;
+    }
+
+    .containerMissionTexte:nth-child(3){
+        margin-left: 0;
+    }
+
+    .containerLesVisagesDeSoleadmedia{
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .containerLesVisagesDeSoleadmediaDroite{
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .containerLesVisagesDeSoleadmedia h3{
+        margin-top: 20px;
+    }
+
+    .containerLesVisagesDeSoleadmediaDroite h3{
+        margin-top: 20px;
+    }
+
+    #containerTexte h2{
+        font-size: 20px;
+    }
+
+    #containerTexte p{
+        font-size: 15px;
     }
 }
 
