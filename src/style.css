@@ -985,8 +985,48 @@ textarea {
     height: 150px;
 }
 
+/*-------------------------*/
+
+.containerGaucheB2C{
+    width: 80%;
+    margin: 80px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerGaucheB2C h2{
+    font-size: 30px;
+}
+
+.containerGaucheB2C p{
+    font-size: 23px;
+}
+
+.containerDroiteB2C h2{
+    font-size: 30px;
+}
+
+.containerDroiteB2C p{
+    font-size: 23px;
+}
+
+.containerTexteB2C{
+    width: 50%;
+    margin-top: 100px;
+}
+
+/*-------------------------*/
+
 #containerLogoContact a:hover{
     color: #871CC6;
+}
+
+.containerDroiteB2C{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
 }
 
 /* Style pour le bouton Envoyer */

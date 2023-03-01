@@ -44,6 +44,38 @@
     #containerBackgroundCRM{
         margin-top: 100px;
     }
+
+    /*-------------------------*/
+
+    .containerGaucheB2C{
+        width: 80%;
+        margin: 80px auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .containerGaucheB2C h2{
+        font-size: 25px;
+    }
+
+    .containerGaucheB2C p{
+        font-size: 20px;
+    }
+
+    .containerDroiteB2C h2{
+        font-size: 25px;
+    }
+
+    .containerDroiteB2C p{
+        font-size: 20px;
+    }
+
+    .containerTexteB2C{
+        width: 50%;
+        margin-top: 100px;
+    }
+
+    /*-------------------------*/
 }
 
 @media (max-width: 1280px){
@@ -122,10 +154,45 @@
         margin-top: 20px;
     }
 
+    /*-------------------------*/
 
-}
+    .containerGaucheB2C{
+        width: 80%;
+        margin: 80px auto;
+        display: flex;
+        justify-content: space-between;
+    }
 
-@media (max-width: 1012px){
+    .containerGaucheB2C h2{
+        font-size: 20px;
+    }
+
+    .containerGaucheB2C p{
+        font-size: 15px;
+    }
+
+    .containerDroiteB2C h2{
+        font-size: 20px;
+    }
+
+    .containerDroiteB2C p{
+        font-size: 15px;
+    }
+
+    .containerDroiteB2C img{
+        width: 30%;
+    }
+
+    .containerGaucheB2C img{
+        width: 40%;
+    }
+
+    .containerTexteB2C{
+        width: 50%;
+        margin-top: 100px;
+    }
+
+    /*-------------------------*/
 
 }
 
@@ -440,6 +507,50 @@
         display: none;
     }
 
+    /*-------------------------*/
+
+    .containerGaucheB2C{
+        width: 90%;
+        margin: 80px auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .containerGaucheB2C h2{
+        font-size: 20px;
+    }
+
+    .containerGaucheB2C p{
+        font-size: 15px;
+    }
+
+    .containerDroiteB2C h2{
+        font-size: 20px;
+    }
+
+    .containerDroiteB2C p{
+        font-size: 15px;
+    }
+
+    .containerDroiteB2C img{
+        width: 40%;
+        height: 40%;
+        margin-top: 100px;
+    }
+
+    .containerGaucheB2C img{
+        width: 40%;
+        height: 40%;
+        margin-top: 100px;
+    }
+
+    .containerTexteB2C{
+        width: 50%;
+        margin-top: 0;
+    }
+
+    /*-------------------------*/
+
 }
 
 
@@ -514,6 +625,46 @@
     #containerTextePourquoiNotreCRM p{
         font-size: 15px;
     }
+
+    /*-------------------------*/
+
+    .containerGaucheB2C{
+        width: 90%;
+        margin: 80px auto;
+        display: flex;
+        justify-content: unset;
+    }
+
+    .containerGaucheB2C h2{
+        font-size: 20px;
+    }
+
+    .containerGaucheB2C p{
+        font-size: 15px;
+    }
+
+    .containerDroiteB2C h2{
+        font-size: 20px;
+    }
+
+    .containerDroiteB2C p{
+        font-size: 15px;
+    }
+
+    .containerDroiteB2C img{
+        display: none;
+    }
+
+    .containerGaucheB2C img{
+        display: none;
+    }
+
+    .containerTexteB2C{
+        width: 100%;
+        margin-top: 0;
+    }
+
+    /*-------------------------*/
 }
 
 @media (max-width: 494px){
