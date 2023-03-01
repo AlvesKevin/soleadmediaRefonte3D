@@ -15,6 +15,45 @@
 </head>
 <body>
 <div id="navbar">
+    <div id="mySidenav" class="sidenav">
+        <a id="closeBtn" href="#" class="close">×</a>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="QuiSommesNous.html">Qui sommes-nous ?</a></li>
+            <li><a href="GenerationDeLead.html">Génération de lead</a></li>
+            <li><a href="CRM_Onboarding.html">Customer OnBoarding et retargeting</a></li>
+            <li><a href="fichierB2B.html">Fichier B2B</a></li>
+            <li><a href="analyse.html">Analyse comportemental</a></li>
+            <li><a href="baseB2C.html">Base B2C Opt-in</a></li>
+        </ul>
+    </div>
+
+    <a href="#" id="openBtn">
+        <script>
+            var sidenav = document.getElementById("mySidenav");
+            var openBtn = document.getElementById("openBtn");
+            var closeBtn = document.getElementById("closeBtn");
+
+            openBtn.onclick = openNav;
+            closeBtn.onclick = closeNav;
+
+            /* Set the width of the side navigation to 250px */
+            function openNav() {
+                sidenav.classList.add("active");
+            }
+
+            /* Set the width of the side navigation to 0 */
+            function closeNav() {
+                sidenav.classList.remove("active");
+            }
+        </script>
+        <span class="burger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+    </a>
+
     <a href="index.html"><img id="logoSoleadNavbar" src="img/logoSoleadmedia.png" alt="logo soleadmedia"></a>
     <div id="containerOnglet">
         <p><a href="index.html">Accueil</a></p>

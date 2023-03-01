@@ -10,6 +10,32 @@
         width: 600px;
     }
 
+    #containerTitrePage1{
+        margin-top: 150px;
+        margin-left: 50px;
+    }
+
+    #containerTitrePage1 h2{
+        font-size: 30px;
+    }
+
+    #containerTitrePage1 p{
+        font-size: 25px;
+        margin-top: 15px;
+    }
+
+    .sous-menu{
+        width: 25%;
+    }
+
+    #containerVignette1{
+        width: 90%;
+    }
+
+    .vignette{
+        width: 30%;
+    }
+
     /*-------------- CRM ---------------*/
 
     #titrePourquoiCRM{
@@ -193,10 +219,84 @@
     }
 
     /*-------------------------*/
-
 }
 
 @media (max-width: 1000px){
+
+/*------------------------------------------*/
+
+    #mySidenav{
+        display: unset;
+    }
+
+    /* Sidenav menu */
+    .sidenav {
+        height: 100%;
+        width: 250px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: -250px;
+        background-color: #a000ff;
+        padding-top: 60px;
+        transition: right 0.5s ease-out;
+    }
+
+    /* Sidenav menu links */
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #f1f1f1;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: #111;
+    }
+
+    .sidenav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Active class */
+    .sidenav.active {
+        right: 0;
+    }
+
+    /* Close btn */
+    .sidenav .close {
+        position: absolute;
+        top: 0;
+        right: 15px;
+        font-size: 36px;
+    }
+
+    /* Icône burger */
+    .burger-icon span {
+        display: block;
+        width: 35px;
+        height: 3px;
+        background-color: black;
+        margin: 6px 0;
+    }
+
+    #openBtn{
+        margin-top: 35px;
+        margin-right: 20px;
+        margin-left: 0;
+        float: right;
+        right: 0;
+        position: absolute;
+        display: unset;
+    }
+
+/*------------------------------------------*/
+
+
     #containerOnglet{
         display: none;
     }
@@ -206,7 +306,10 @@
     }
 
     #logoSoleadNavbar{
-        margin-left: 0;
+        width: 250px;
+        height: 60px;
+        margin-top: 20px;
+        margin-right: 55px;
     }
 
     #page1{
@@ -556,6 +659,25 @@
 
 @media (max-width: 645px){
 
+    #containerOnglet{
+        display: none;
+    }
+
+    #navbar{
+        height: 80px;
+        justify-content: unset;
+    }
+
+    #logoSoleadNavbar{
+        width: 220px;
+        height: 55px;
+        margin-top: 20px;
+        margin-right: 55px;
+        margin-left: 10px;
+    }
+
+    /*----------------------------------*/
+
     .imageIllustrationHeader{
         display: none;
     }
@@ -758,6 +880,8 @@
         font-size: 15px;
     }
 }
+
+
 
 
 

@@ -11,6 +11,14 @@ html, body {
     font-family: 'Poppins', sans-serif;
 }
 
+#openBtn{
+    display: none;
+}
+
+#mySidenav{
+    display: none;
+}
+
 a{
     text-decoration: none;
     color: #141214;
@@ -158,13 +166,13 @@ li a {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
-    color: #ffffff !important;
+    color: #2d2a2a !important;
 
 
-    --initialTextColor: #FFF;
+    --initialTextColor: #262424;
     --slideTextColor: #ffffff;
 
-    --initialBgColor: #312230;
+    --initialBgColor: #ebcaff;
     --slideBgColor: #780be4;
 
     color: var(--initialTextColor);
@@ -238,6 +246,7 @@ li a {
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     padding: 5px;
+    padding-bottom: 15px;
     margin-top: 3px;
 }
 #titreOngletSolutions:before {
@@ -248,7 +257,7 @@ li a {
     left: 0;
     right: 0;
     bottom: 0;
-    background:  #312230;
+    background: #ebcaff;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
     -webkit-transform-origin: 0 50%;
@@ -261,7 +270,7 @@ li a {
     transition-timing-function: ease-out;
 }
 #titreOngletSolutions:hover, #titreOngletSolutions:focus, #titreOngletSolutions:active {
-    color: white;
+    color: #262424;
 }
 #titreOngletSolutions:hover:before, #titreOngletSolutions:focus:before, #titreOngletSolutions:active:before {
     -webkit-transform: scaleX(1);
@@ -289,7 +298,7 @@ li a {
     left: 0;
     right: 0;
     bottom: 0;
-    background:  #312230;
+    background: #ebcaff;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
     -webkit-transform-origin: 0 50%;
@@ -302,7 +311,7 @@ li a {
     transition-timing-function: ease-out;
 }
 #containerOnglet a:hover, #containerOnglet a:focus, #containerOnglet a:active {
-    color: white !important
+    color: #232121 !important
 }
 #containerOnglet p:hover:before, #containerOnglet p:focus:before, #containerOnglet p:active:before {
     -webkit-transform: scaleX(1);
@@ -314,7 +323,6 @@ li a {
 
 #page1{
     width: 100%;
-    height: 100vh;
     display: flex;
     justify-content: center;
     background: linear-gradient(119.13deg, #49147D 0.33%, #9326FF 71.91%);
