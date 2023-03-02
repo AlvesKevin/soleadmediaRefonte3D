@@ -237,7 +237,7 @@
         z-index: 1;
         top: 0;
         right: -250px;
-        background-color: #a000ff;
+        background-color: #ffffff;
         padding-top: 60px;
         transition: right 0.5s ease-out;
     }
@@ -247,13 +247,13 @@
         padding: 8px 8px 8px 32px;
         text-decoration: none;
         font-size: 25px;
-        color: #f1f1f1;
+        color: #1e1c1c;
         display: block;
         transition: 0.3s;
     }
 
     .sidenav a:hover {
-        color: #111;
+        color: #a000ff;
     }
 
     .sidenav ul {
