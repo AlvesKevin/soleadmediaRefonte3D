@@ -1075,3 +1075,12 @@ button[type="submit"] span {
     display: block;
     text-align: center;
 }
+
+#mentionLegal{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#mentionLegal h2{
+    color: #780be4;
+}
