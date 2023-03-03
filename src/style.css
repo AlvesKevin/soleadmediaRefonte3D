@@ -19,6 +19,16 @@ html, body {
     display: none;
 }
 
+#boutonRetourHeader{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    background-image: url("img/arrow.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    rotate: 180deg;
+}
+
 a{
     text-decoration: none;
     color: #141214;
@@ -335,7 +345,7 @@ li a {
     margin-top: 200px;
 }
 
-#containerTitrePage1 h2{
+#containerTitrePage1 h1{
     font-size: 40px;
 }
 
@@ -359,7 +369,7 @@ li a {
 }
 
 #containerTitre p{
-    width: 45%;
+    width: 75%;
     margin: 20px auto;
     text-align: center;
     font-size: 40px;
@@ -382,9 +392,17 @@ li a {
     width: 28%;
     border-radius: 30px;
     background-color: #ffffff;
-    border: 2px solid #D9D9D9;
+    border: 2px solid #c674ff;
     justify-content: center;
     text-align: center;
+    padding-bottom: 20px;
+    transition: background-color 0.5s ease-out;
+}
+
+.vignette:hover{
+    border-radius: 30px;
+    background-color: #ffe1ff;
+    border: 2px solid #c674ff;
 }
 
 .vignette img{
@@ -439,12 +457,12 @@ li a {
 }
 
 #containerQuiSommesNous img{
-    width: 40%;
+    width: 35%;
     height: 40%;
 }
 
 #containerTexteQuiSommesNous{
-    width: 40%;
+    width: 50%;
 }
 
 #containerTexteQuiSommesNous h2{
@@ -452,7 +470,7 @@ li a {
 }
 
 #containerTexteQuiSommesNous p{
-    font-size: 30px;
+    font-size: 25px;
     margin-top: 20px;
 }
 
@@ -589,7 +607,7 @@ footer{
     justify-content: space-between;
 }
 
-.containerTitreIllustration h2{
+.containerTitreIllustration h1{
     font-size: 40px;
     margin-top: 80px;
     width: 85%;
@@ -876,10 +894,11 @@ footer{
 
 .vignettePartoutDansLeMonde{
     width: 460px;
-    height: 160px;
     background: linear-gradient(112.11deg, #7000DF 3.84%, #A041FF 95.88%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 #containerTexteFichier{
@@ -941,7 +960,7 @@ footer{
     margin-left: 200px;
 }
 
-#containerTexte h2{
+#containerTexte h1{
     font-size: 30px;
 }
 

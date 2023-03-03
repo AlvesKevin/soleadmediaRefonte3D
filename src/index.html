@@ -3,32 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soleadmedia</title>
+    <title>Soleadmedia - Boostez votre acquisition de leads avec notre expertise</title>
+    <meta name="description" content="Boostez votre prospection grâce à Soleadmedia, votre partenaire de choix pour la génération de leads, le customer onboarding et retargeting, les fichiers B2B/B2C et l'analyse comportementale. Notre expertise vous permet d'atteindre vos objectifs rapidement et efficacement. Contactez-nous dès maintenant pour en savoir plus.">
+    <meta name="keywords" content="génération de lead, customer onboarding, retargeting, fichier b2b, fichier b2c, analyse comportementale, prospection, lead">
+
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./styleMobile.css">
 
     <link rel="icon" href="img/faviconSoleadmedia.png" />
 
+    <link rel="canonical" href="https://soleadmedia.com/">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0SR8CYLNLJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-0SR8CYLNLJ');
+    </script>
 </head>
 <body>
 <div id="navbar">
     <div id="mySidenav" class="sidenav">
         <a id="closeBtn" href="#" class="close">×</a>
         <ul>
+            <div class="traitSousMenu"></div>
             <li><a href="index.html">Accueil</a></li>
-            <li><a href="QuiSommesNous.html">Qui sommes-nous ?</a></li>
+            <li><a href="quisommesnous.html">Qui sommes-nous ?</a></li>
             <br>
             <li><a href="#">- Nos solutions -</a></li>
             <br>
-            <li><a href="GenerationDeLead.html">Génération de lead</a></li>
-            <li><a href="CRM_Onboarding.html">Customer OnBoarding et retargeting</a></li>
-            <li><a href="fichierB2B.html">Fichier B2B</a></li>
+            <li><a href="generationlead.html">Génération de lead</a></li>
+            <li><a href="crm_onboarding.html">Customer OnBoarding et retargeting</a></li>
+            <li><a href="fichierb2b.html">Fichier B2B</a></li>
             <li><a href="analyse.html">Analyse comportemental</a></li>
-            <li><a href="baseB2C.html">Base B2C Opt-in</a></li>
+            <li><a href="baseb2c.html">Base B2C Opt-in</a></li>
+            <div class="traitSousMenu"></div>
+
+            <a id="boutonSousMenu" href="contact.html"><div class="btn">Contact</div></a>
+            <div id="containerReseauSousMenu">
+                <img src="img/linkedin.png" alt="linkedin">
+                <img src="img/instagram.png" alt="instagram">
+            </div>
         </ul>
     </div>
 
@@ -61,16 +83,16 @@
     <a href="index.html"><img id="logoSoleadNavbar" src="img/logoSoleadmedia.png" alt="logo soleadmedia"></a>
     <div id="containerOnglet">
         <p><a href="index.html">Accueil</a></p>
-        <p><a href="QuiSommesNous.html">Qui sommes-nous ?</a></p>
+        <p><a href="quisommesnous.html">Qui sommes-nous ?</a></p>
         <li class="menu-deroulant">
             <a id="titreOngletSolutions" href="#">Solutions</a>
             <ul class="sous-menu">
                 <div>
-                    <a href="GenerationDeLead.html"><li><img src="img/marketing.svg">Génération de lead</li></a>
-                    <a href="CRM_Onboarding.html"><li><img src="img/crm.svg">Customer OnBoarding et retargeting</li></a>
-                    <a href="fichierB2B.html"><li><img src="img/files.svg">Fichier B2B</li></a>
-                    <a href="analyse.html"><li><img src="img/artificial-intelligence.svg">Analyse comportemental</li></a>
-                    <a href="baseB2C.html"><li><img src="img/database-share.svg">Base B2C Opt-in</li></a>
+                    <a href="generationlead.html"><li><img src="img/marketing.svg" alt="marketing">Génération de lead</li></a>
+                    <a href="crm_onboarding.html"><li><img src="img/crm.svg" alt="crm">Customer OnBoarding et retargeting</li></a>
+                    <a href="fichierb2b.html"><li><img src="img/files.svg" alt="fichier">Fichier B2B</li></a>
+                    <a href="analyse.html"><li><img src="img/artificial-intelligence.svg" alt="intelligence artificielle">Analyse comportemental</li></a>
+                    <a href="baseb2c.html"><li><img src="img/database-share.svg" alt="base de donnée">Base B2C Opt-in</li></a>
                 </div>
             </ul>
         </li>
@@ -82,7 +104,7 @@
     <script type="module" src="./script.js"></script>
     <div id="page1">
         <div id="containerTitrePage1">
-            <h2>Accélérez votre performance commerciale avec les meilleurs outils de prospections !</h2>
+            <h1>Accélérez votre performance commerciale avec les meilleurs outils de prospections !</h1>
             <p>Notre expertise, notre agilité, notre technologie innovante, notre approche ROIste en marketing digital 360° vous permettront de développer de nouvelles opportunités clients B2C ou B2B.</p>
         </div>
         <img src="img/illustrationPage1.png" alt="illustration page 1">
@@ -98,36 +120,50 @@
         </div>
         <div id="containerVignette1">
             <div class="vignette">
-                <img src="img/illustrationVignette1.png" alt="illustration Vignette 1">
-                <h3>Génération de Leads</h3>
-                <p>Nous maitrisons les techniques les plus efficaces et les plus innovantes pour vous fournir des leads qualifiés.</p>
+                <a href="generationlead.html">
+                    <img src="img/illustrationVignette1.png" alt="illustration Vignette 1">
+                    <h3>Génération de Leads</h3>
+                    <p>Nous maitrisons les techniques les plus efficaces et les plus innovantes pour vous fournir des leads qualifiés.</p>
+                </a>
             </div>
             <div class="vignette">
-                <img src="img/illustrationVignette2.png" alt="illustration Vignette 2">
-                <h3>Fichiers B2B qualifiés</h3>
-                <p>Accédez à des millions d’entreprises et de décideurs partout dans le monde et gagnez en efficacité.</p>
+                <a href="fichierb2b.html">
+                    <img src="img/illustrationVignette2.png" alt="illustration Vignette 2">
+                    <h3>Fichiers B2B qualifiés</h3>
+                    <p>Accédez à des millions d’entreprises et de décideurs partout dans le monde et gagnez en efficacité.</p>
+                </a>
             </div>
             <div class="vignette">
-                <img src="img/illustrationVignette3.png" alt="illustration Vignette 3">
-                <h3>Customer Onboarding + retargeting</h3>
-                <p>Nous identifions les internautes dans leur parcours pour leur faisons parvenir votre communication sur le meilleur canal.</p>
+                <a href="crm_onboarding.html">
+                    <img src="img/illustrationVignette3.png" alt="illustration Vignette 3">
+                    <h3>Customer Onboarding + retargeting</h3>
+                    <p>Nous identifions les internautes dans leur parcours pour leur faire parvenir votre communication sur le meilleur canal.</p>
+                </a>
             </div>
             <div class="vignette">
-                <img src="img/analysis-presentation.png" alt="illustration Vignette 3">
-                <h3>Analyse Comportementale</h3>
-                <p>Exploitez de nouveaux bassins d’audience grâce à une analyse comportementale optimisée avec notre IA exclusive.</p>
+                <a href="analyse.html">
+                    <img src="img/analysis-presentation.png" alt="illustration Vignette 3">
+                    <h3>Analyse Comportementale</h3>
+                    <p>Exploitez de nouveaux bassins d’audience grâce à une analyse comportementale optimisée avec notre IA exclusive.</p>
+                </a>
             </div>
             <div class="vignette">
-                <img src="img/database-folder.png" alt="illustration Vignette 3">
-                <h3>Base B2C Opt-in</h3>
-                <p>300 Millions de contacts avec nos bases partenaires Opt-in sur toute l’Europe.</p>
+                <a href="baseb2c.html">
+                    <img src="img/database-folder.png" alt="illustration Vignette 3">
+                    <h3>Base B2C Opt-in</h3>
+                    <p>300 Millions de contacts avec nos bases partenaires Opt-in sur toute l’Europe.</p>
+                </a>
             </div>
         </div>
-        <div id="containerTitreSolution">
-            <h2>Découvrez TOUTES nos solutions !</h2>
-            <p>Chatbot, création de site internet, contenue pour les réseaux sociaux, social ads et bien plus encore...</p>
-            <div class="btn">Nos solutions</div>
-        </div>
+
+        <!--
+            <div id="containerTitreSolution">
+                <h2>Découvrez TOUTES nos solutions !</h2>
+                <p>Chatbot, création de site internet, contenue pour les réseaux sociaux, social ads et bien plus encore...</p>
+                <div class="btn">Nos solutions</div>
+            </div>
+        -->
+
         <div id="ligne"></div>
         <div id="containerQuiSommesNous">
             <div id="containerTexteQuiSommesNous">
@@ -138,23 +174,23 @@
             <img src="img/illustrationQuiSommesNous.png" alt="illustration qui sommes nous">
         </div>
         <div id="containerReseauxSociaux">
-            <img src="img/illustrationPoint.svg">
+            <img src="img/illustrationPoint.svg" alt="illustration point">
             <div id="containerTitreIllustration">
                 <h2>Suivez nous sur les <strong>réseaux sociaux</strong> !</h2>
                 <div id="containerIllustrationReseaux">
-                    <img src="img/linkedin.png" alt="linkedin">
-                    <img src="img/instagram.png" alt="instagram">
+                    <a href="https://www.linkedin.com/company/soleadmedia/"><img src="img/linkedin.png" alt="linkedin"></a>
+                    <a href="https://www.instagram.com/soleadsmedia/"><img src="img/instagram.png" alt="instagram"></a>
                     <img src="img/facebook.png" alt="facebook">
                     <img src="img/tiktok.png" alt="tiktok">
                 </div>
             </div>
-            <img src="img/illustrationPoint.svg">
+            <img src="img/illustrationPoint.svg" alt="illustration point">
         </div>
     </div>
     <footer>
         <div id="containerLogoContact">
             <img src="img/logoSoleadmedia.png" alt="logo soleadmedia">
-            <p><b>Téléphone:</b> <a href="tel:01 80 88 60 00">01 80 88 60 00</a></p>
+            <p><b>Téléphone:</b> <a href="tel:02 43 54 90 60">02 43 54 90 60</a></p>
             <p><b>Email:</b> <a href="mailto:contact@soleadmedia.com">contact@soleadmedia.com</a></p>
             <p><b>Localisation:</b> 19 Bd Marie et Alexandre OYON, 72100 Le Mans</p>
         </div>
@@ -164,17 +200,17 @@
                 <h3>Nos solutions</h3>
             </div>
             <div id="containerTexteNosSolutionsFooter">
-                <p><a href="GenerationDeLead.html">- Génération de lead</a></p>
-                <p><a href="fichierB2B.html">- Fichier B2B</a></p>
-                <p><a href="CRM_Onboarding.html">- Customer OnBoarding et retargeting</a></p>
+                <p><a href="generationlead.html">- Génération de lead</a></p>
+                <p><a href="fichierb2b.html">- Fichier B2B</a></p>
+                <p><a href="crm_onboarding.html">- Customer OnBoarding et retargeting</a></p>
                 <p><a href="analyse.html">- Analyse comportementale</a></p>
-                <p><a href="baseB2C.html">- Télémarketing</a></p>
+                <p><a href="baseb2c.html">- Télémarketing</a></p>
             </div>
         </div>
         <div id="containerAutreSolutionReseau">
             <div class="titreBulle">
                 <img src="img/bulle.png" alt="bulle">
-                <h3>Nos autres solutions</h3>
+                <h3>Nos autres entreprises</h3>
             </div>
             <div id="containerTexteAutreSolution">
                 <p><a href="https://sofanmedia.com/">- Sofanmedia</a></p>
@@ -183,7 +219,7 @@
             <div id="containerReseau">
                 <div class="titreBulle">
                     <img src="img/bulle.png" alt="bulle">
-                    <h3>Nos réseaux sociaux</h3>
+                    <h3>Nous sommes aussi sur les réseaux</h3>
                 </div>
                 <div id="containerReseauImage">
                     <a href="https://www.linkedin.com/company/soleadmedia/"><img class="imageReseau" src="img/linkedin.png" alt="linkedin"></a>

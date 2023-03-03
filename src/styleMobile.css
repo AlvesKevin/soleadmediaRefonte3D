@@ -1,7 +1,6 @@
 @media (max-width: 1600px){
     #page1 img{
         width: 850px;
-        height: 800px;
     }
 }
 
@@ -15,7 +14,7 @@
         margin-left: 50px;
     }
 
-    #containerTitrePage1 h2{
+    #containerTitrePage1 h1{
         font-size: 30px;
     }
 
@@ -125,7 +124,7 @@
         margin-top: 80px;
     }
 
-    #containerTitrePage1 h2{
+    #containerTitrePage1 h1{
         font-size: 30px;
     }
 
@@ -246,7 +245,7 @@
     .sidenav a {
         padding: 8px 8px 8px 32px;
         text-decoration: none;
-        font-size: 25px;
+        font-size: 15px;
         color: #1e1c1c;
         display: block;
         transition: 0.3s;
@@ -275,12 +274,34 @@
         font-size: 36px;
     }
 
+    .traitSousMenu{
+        border-top: 1px solid #a000ff;
+        width: 80%;
+        margin: 5px auto;
+    }
+
+    #boutonSousMenu{
+        margin-top: 30px;
+    }
+
+    #containerReseauSousMenu{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    #containerReseauSousMenu img{
+        width: 70px;
+        margin-right: 20px;
+    }
+
+
     /* Icône burger */
     .burger-icon span {
         display: block;
         width: 35px;
         height: 3px;
-        background-color: black;
+        background-color: #43155e;
         margin: 6px 0;
     }
 
@@ -328,7 +349,7 @@
         text-align: center;
     }
 
-    #containerTitrePage1 h2{
+    #containerTitrePage1 h1{
         width: 100%;
         margin-top: 150px;
     }
@@ -691,7 +712,6 @@
 
     .vignette{
         width: 100%;
-        height: 450px;
     }
 
     #containerIllustrationTitre{
@@ -795,12 +815,12 @@
         width: 90%;
     }
 
-    #containerTitrePage1 h2 {
+    #containerTitrePage1 h1{
         font-size: 25px;
         margin-top: 100px;
     }
 
-    #containerTitrePage1 p {
+    #containerTitrePage1 p{
         font-size: 18px;
     }
 

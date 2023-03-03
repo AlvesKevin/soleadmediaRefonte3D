@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soleadmedia</title>
+    <title>Contact</title>
+    <meta name="description" content="Contactez notre équipe d'experts en prospection pour discuter de votre projet. Chez Solead Media, nous sommes à votre écoute pour répondre à toutes vos questions et vous accompagner dans votre démarche de prospection.">
+    <meta name="keywords" content="génération de lead, customer onboarding, retargeting, fichier b2b, fichier b2c, analyse comportementale, prospection, lead">
+
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./styleMobile.css">
 
@@ -12,19 +15,40 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0SR8CYLNLJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-0SR8CYLNLJ');
+    </script>
 </head>
 <body>
 <div id="navbar">
     <div id="mySidenav" class="sidenav">
         <a id="closeBtn" href="#" class="close">×</a>
         <ul>
+            <div class="traitSousMenu"></div>
             <li><a href="index.html">Accueil</a></li>
-            <li><a href="QuiSommesNous.html">Qui sommes-nous ?</a></li>
-            <li><a href="GenerationDeLead.html">Génération de lead</a></li>
-            <li><a href="CRM_Onboarding.html">Customer OnBoarding et retargeting</a></li>
-            <li><a href="fichierB2B.html">Fichier B2B</a></li>
+            <li><a href="quisommesnous.html">Qui sommes-nous ?</a></li>
+            <br>
+            <li><a href="#">- Nos solutions -</a></li>
+            <br>
+            <li><a href="generationlead.html">Génération de lead</a></li>
+            <li><a href="crm_onboarding.html">Customer OnBoarding et retargeting</a></li>
+            <li><a href="fichierb2b.html">Fichier B2B</a></li>
             <li><a href="analyse.html">Analyse comportemental</a></li>
-            <li><a href="baseB2C.html">Base B2C Opt-in</a></li>
+            <li><a href="baseb2c.html">Base B2C Opt-in</a></li>
+            <div class="traitSousMenu"></div>
+
+            <a id="boutonSousMenu" href="contact.html"><div class="btn">Contact</div></a>
+            <div id="containerReseauSousMenu">
+                <img src="img/linkedin.png" alt="linkedin">
+                <img src="img/instagram.png" alt="instagram">
+            </div>
         </ul>
     </div>
 
@@ -57,16 +81,16 @@
     <a href="index.html"><img id="logoSoleadNavbar" src="img/logoSoleadmedia.png" alt="logo soleadmedia"></a>
     <div id="containerOnglet">
         <p><a href="index.html">Accueil</a></p>
-        <p><a href="QuiSommesNous.html">Qui sommes-nous ?</a></p>
+        <p><a href="quisommesnous.html">Qui sommes-nous ?</a></p>
         <li class="menu-deroulant">
             <a id="titreOngletSolutions" href="#">Solutions</a>
             <ul class="sous-menu">
                 <div>
-                    <a href="GenerationDeLead.html"><li><img src="img/marketing.svg">Génération de lead</li></a>
-                    <a href="CRM_Onboarding.html"><li><img src="img/crm.svg">Customer OnBoarding et retargeting</li></a>
-                    <a href="fichierB2B.html"><li><img src="img/files.svg">Fichier B2B</li></a>
-                    <a href="analyse.html"><li><img src="img/artificial-intelligence.svg">Analyse comportemental</li></a>
-                    <a href="baseB2C.html"><li><img src="img/database-share.svg">Base B2C Opt-in</li></a>
+                    <a href="generationlead.html"><li><img src="img/marketing.svg" alt="marketing">Génération de lead</li></a>
+                    <a href="crm_onboarding.html"><li><img src="img/crm.svg" alt="crm">Customer OnBoarding et retargeting</li></a>
+                    <a href="fichierb2b.html"><li><img src="img/files.svg" alt="fichier">Fichier B2B</li></a>
+                    <a href="analyse.html"><li><img src="img/artificial-intelligence.svg" alt="intelligence artificielle">Analyse comportemental</li></a>
+                    <a href="baseb2c.html"><li><img src="img/database-share.svg" alt="base de donnée">Base B2C Opt-in</li></a>
                 </div>
             </ul>
         </li>
@@ -77,7 +101,7 @@
 <div id="containerContact">
     <div id="containerTitreFormulaire">
         <div id="containerTexte">
-            <h2>Contactez-nous !</h2>
+            <h1>Contactez-nous !</h1>
             <p>Vous avez été séduit par une de nos offres ? N’hésitez pas à nous contacter, nous vous rappellerons dans les plus brefs délais.</p>
         </div>
         <div id="containerFormulaire">
@@ -116,8 +140,8 @@
 <footer>
     <div id="containerLogoContact">
         <img src="img/logoSoleadmedia.png" alt="logo soleadmedia">
-        <p><b>Téléphone:</b> 01 80 88 6000 </p>
-        <p><b>Email:</b> contact@soleadmedia.com</p>
+        <p><b>Téléphone:</b> <a href="tel:02 43 54 90 60">02 43 54 90 60</a></p>
+        <p><b>Email:</b> <a href="mailto:contact@soleadmedia.com">contact@soleadmedia.com</a></p>
         <p><b>Localisation:</b> 19 Bd Marie et Alexandre OYON, 72100 Le Mans</p>
     </div>
     <div id="containerNosSolutionsFooter">
