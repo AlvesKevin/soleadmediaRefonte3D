@@ -94,8 +94,20 @@
                 </div>
             </ul>
         </li>
-        <a href="contact.html"><div class="btn">Contact</div></a>
-    </div>
+        <a class="boutonSousMenu" href="contact.html"><div class="btn" id="myButton">Contact</div></a>
+
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
+        <script src="https://unpkg.com/tippy.js@6"></script>
+        <script>
+            // With the above scripts loaded, you can call `tippy()` with a CSS
+            // selector and a `content` prop:
+            tippy('#myButton', {
+                content: '<a style="color: white" href="tel:02 43 54 90 60">02 43 54 90 60</a>',
+                animation: 'shift-away',
+                allowHTML: true,
+                interactive: true,
+            });
+        </script>    </div>
 </div>
 
 <div id="containerContact">
@@ -152,9 +164,9 @@
         <div id="containerTexteNosSolutionsFooter">
             <p><a href="generationlead.html">- Génération de leads</a></p>
             <p><a href="fichierb2b.html">- Fichier B2B</a></p>
+            <p><a href="baseb2c.html">- Base B2C</a></p>
             <p><a href="crm_onboarding.html">- Customer OnBoarding + retargeting</a></p>
             <p><a href="analyse.html">- Analyse comportementale</a></p>
-            <p><a href="baseb2c.html">- Télémarketing</a></p>
         </div>
     </div>
     <div id="containerAutreSolutionReseau">

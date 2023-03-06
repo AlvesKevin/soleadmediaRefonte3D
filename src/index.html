@@ -7,14 +7,6 @@
     <meta name="description" content="Boostez votre prospection grâce à Soleadmedia, votre partenaire de choix pour la génération de leads, le customer onboarding et retargeting, les fichiers B2B/B2C et l'analyse comportementale. Notre expertise vous permet d'atteindre vos objectifs rapidement et efficacement. Contactez-nous dès maintenant pour en savoir plus.">
     <meta name="keywords" content="génération de lead, customer onboarding, retargeting, fichier b2b, fichier b2c, analyse comportementale, prospection, lead">
 
-    <!-- Development -->
-    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
-    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
-
-    <!-- Production -->
-    <script src="https://unpkg.com/@popperjs/core@2"></script>
-    <script src="https://unpkg.com/tippy.js@6"></script>
-
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./styleMobile.css">
 
@@ -26,6 +18,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 
+    <script>
+        tippy('#boutonSousMenu', {
+            content: "I'm a Tippy tooltip!",
+        });
+    </script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-0SR8CYLNLJ"></script>
@@ -35,6 +32,7 @@
         gtag('js', new Date());
 
         gtag('config', 'G-0SR8CYLNLJ');
+
     </script>
 </head>
 <body>
@@ -51,15 +49,6 @@
         "privacy_policy_url" : "https://soleadmedia.com/mentionlegal.html" ,
         "preferencesId" : "#" ,
         "companyLogoURL" : "https://d2r80wdbkwti6l.cloudfront.net/sHokA8VplHv4iT4qCnwGAOvvILIUsJke.jpg"
-    });
-</script>
-
-<script>
-    import tippy from 'tippy.js';
-    import 'tippy.js/dist/tippy.css'; // optional for styling
-
-    tippy('#myButton', {
-        content: "I'm a Tippy tooltip!",
     });
 </script>
 
@@ -82,7 +71,7 @@
             <li><a href="baseb2c.html">Base B2C Opt-in</a></li>
             <div class="traitSousMenu"></div>
 
-            <a id="boutonSousMenu" href="contact.html"><button class="btn" id="myButton">Contact</button></a>
+            <a class="boutonSousMenu" href="contact.html"><div class="btn">Contact</div></a>
 
             <div id="containerReseauSousMenu">
                 <img src="img/linkedin.png" alt="linkedin">
@@ -133,7 +122,20 @@
                 </div>
             </ul>
         </li>
-        <a href="contact.html"><div class="btn">Contact</div></a>
+        <a class="boutonSousMenu" href="contact.html"><div class="btn" id="myButton">Contact</div></a>
+
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
+        <script src="https://unpkg.com/tippy.js@6"></script>
+        <script>
+            // With the above scripts loaded, you can call `tippy()` with a CSS
+            // selector and a `content` prop:
+            tippy('#myButton', {
+                content: '<a style="color: white" href="tel:02 43 54 90 60">02 43 54 90 60</a>',
+                animation: 'shift-away',
+                allowHTML: true,
+                interactive: true,
+            });
+        </script>
     </div>
 </div>
 
@@ -239,9 +241,9 @@
             <div id="containerTexteNosSolutionsFooter">
                 <p><a href="generationlead.html">- Génération de leads</a></p>
                 <p><a href="fichierb2b.html">- Fichier B2B</a></p>
+                <p><a href="baseb2c.html">- Base B2C</a></p>
                 <p><a href="crm_onboarding.html">- Customer OnBoarding + retargeting</a></p>
                 <p><a href="analyse.html">- Analyse comportementale</a></p>
-                <p><a href="baseb2c.html">- Télémarketing</a></p>
             </div>
         </div>
         <div id="containerAutreSolutionReseau">

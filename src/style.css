@@ -19,10 +19,11 @@ html, body {
     display: none;
 }
 
-#boutonSousMenu{
-    margin-top: 30px;
+.boutonSousMenu{
+    margin-top: 10px;
 
 }
+
 
 #boutonRetourHeader{
     width: 40px;
@@ -94,11 +95,13 @@ a{
     background: linear-gradient(112.11deg, #A041FF 3.84%, #7000DF 95.88%);
 }
 
+
 /*-----------------------menu déroulant----------------------------------*/
 
 .menu-deroulant{
     list-style: none;
     margin-top: 13px;
+    width: 200px;
 }
 
 #navbar > ul {
@@ -183,7 +186,6 @@ li a {
     padding-left: 20px;
     color: #2d2a2a !important;
 
-
     --initialTextColor: #262424;
     --slideTextColor: #ffffff;
 
@@ -214,17 +216,11 @@ li a {
     margin-right: 20px;
 }
 
-
 @keyframes apparitionSousMenu {
-    0% {
-        box-shadow: 0px 3px 3px 1px rgba(0,0,0,0);
-    }
-    30% {
-        box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
-    }
+    0% {}
+    30% {}
     100% {
         max-height: 50em;
-        box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
     }
 }
 
@@ -263,7 +259,9 @@ li a {
     padding: 5px;
     padding-bottom: 15px;
     margin-top: 3px;
+    width: 80%;
 }
+
 #titreOngletSolutions:before {
     content: "";
     position: absolute;
