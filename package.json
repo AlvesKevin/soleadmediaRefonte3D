@@ -13,6 +13,7 @@
   "dependencies": {
     "hover.css": "^2.3.2",
     "lil-gui": "^0.17.0",
-    "three": "^0.148.0"
+    "three": "^0.148.0",
+    "tippy.js": "^6.3.7"
   }
 }
