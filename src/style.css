@@ -1087,3 +1087,14 @@ button[type="submit"] span {
 #mentionLegal h2{
     color: #780be4;
 }
+
+/*----------Animation compteur----------*/
+
+.counter{
+    width: 40px;
+    display: unset;
+}
+
+#counter-1{
+    width: 40px;
+}

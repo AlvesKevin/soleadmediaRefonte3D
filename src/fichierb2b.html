@@ -132,50 +132,50 @@
 
 <h2 id="titrePartoutDansLeMonde">Partout dans le monde...</h2>
 <div id="containerPartoutDansLeMonde">
-    <div class="vignettePartoutDansLeMonde">
+    <div class="vignettePartoutDansLeMonde" id="en-chiffre">
         <img src="img/illustrationVignette1PartoutDansLeMonde.png" alt="illustration vignette 1">
         <h3>France</h3>
-        <div>
-            <p>+ de <b>3</b> M d’entreprises</p>
-            <p>+ <b>21</b> M de contacts</p>
+        <div >
+            <p>+ de <div class="counter" id="counter-1" data-count="3"><b>0</b></div> M d’entreprises</p>
+            <p>+ <div class="counter" id="counter-2" data-count="21">0</div> M de contacts</p>
         </div>
     </div>
     <div class="vignettePartoutDansLeMonde">
         <img src="img/illustrationVignette2PartoutDansLeMonde.png" alt="illustration vignette 2">
         <h3>Europe</h3>
         <div>
-            <p>+ de <b>20</b> M d’entreprises</p>
-            <p>+ <b>210</b> M de contacts</p>
+            <p>+ de <div class="counter" id="counter-3" data-count="20">0</div> M d’entreprises</p>
+            <p>+ <div class="counter" id="counter-4" data-count="210">0</div> M de contacts</p>
         </div>
     </div>
     <div class="vignettePartoutDansLeMonde">
         <img src="img/illustrationVignette3PartoutDansLeMonde.png" alt="illustration vignette 3">
         <h3>Afrique</h3>
         <div>
-            <p>+ de <b>1,7</b> M d’entreprises</p>
-            <p>+ <b>700</b> M de contacts</p>
+            <p>+ de <div class="counter" id="counter-5" data-count="2">0</div> M d’entreprises</p>
+            <p>+ <div class="counter" id="counter-6" data-count="700">0</div> M de contacts</p>
         </div>
     </div>
     <div class="vignettePartoutDansLeMonde">
         <img src="img/illustrationVignette4PartoutDansLeMonde.png" alt="illustration vignette 4">
         <h3>Amérique du Nord</h3>
         <div>
-            <p>+ de <b>27</b> M d’entreprises</p>
-            <p>+ <b>300</b> M de contacts</p>
+            <p>+ de <div class="counter" id="counter-7" data-count="27">0</div> M d’entreprises</p>
+            <p>+ <div class="counter" id="counter-8" data-count="300">0</div> M de contacts</p>
         </div>
     </div>
     <div class="vignettePartoutDansLeMonde">
         <img src="img/illustrationVignette5PartoutDansLeMonde.png" alt="illustration vignette 5">
         <h3>Amérique du Sud</h3>
         <div>
-            <p>+ de <b>310</b> M de contacts</p>
+            <p>+ de <div class="counter" id="counter-9" data-count="310">0</div> M de contacts</p>
         </div>
     </div>
     <div class="vignettePartoutDansLeMonde">
         <img src="img/illustrationVignette6PartoutDansLeMonde.png" alt="illustration vignette 6">
         <h3>Asie</h3>
         <div>
-            <p>+ de <b>2,4</b> Mds de contacts </p>
+            <p>+ de <div class="counter" id="counter-10" data-count="3">0</div> Mds de contacts </p>
         </div>
     </div>
 </div>
@@ -230,5 +230,41 @@
     </div>
 </footer>
 <p style="text-align: center">@Soleadmedia2023<a href="mentionlegal.html"> Mention légal</a></p>
+
+<script>
+    function animateValue(id, start, end, duration) {
+        var obj = document.getElementById(id);
+        var range = end - start;
+        var current = start;
+        var increment = end > start? 1 : -1;
+        var stepTime = Math.abs(Math.floor(duration / range));
+        var timer = setInterval(function() {
+            current += increment;
+            obj.innerHTML = current;
+            if (current == end) {
+                clearInterval(timer);
+            }
+        }, stepTime);
+    }
+
+    function animate() {
+        var elements = document.getElementsByClassName("counter");
+        for (var i = 0; i < elements.length; i++) {
+            var element = elements[i];
+            animateValue(element.id, 0, element.dataset.count, 4000);
+        }
+    }
+
+    var animated = false;
+    window.addEventListener('scroll', function() {
+        var element = document.getElementById("en-chiffre");
+        var position = element.getBoundingClientRect();
+
+        if (!animated && position.top <= window.innerHeight) {
+            animate();
+            animated = true;
+        }
+    });
+</script>
 </body>
 </html>
